@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bibliotecas</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><strong>Bibliotecas</strong></td>
+			<td><strong>Dirección</strong></td>
+		</tr>
+		{% for bib in bibliotecas %}
+		<tr>
+			<td>
+				{{ bib.nombre }}
+			</td>
+			<td>
+				{{ bib.direccion }}
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
